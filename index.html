@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendster - Pj Salita</title>
+    <meta name="description" content="Friendster: Pj Salita; Location: Philippines; ">
+    <meta name="robots" content="noarchive">
+    <link rel="stylesheet" type="text/css" media="screen, print" href="./assets/newuser.css">
+    <link rel="stylesheet" type="text/css" media="screen, print" href="./assets/globnav.css">
+    <link rel="shortcut icon" href="./favicon.png">
+    <script type="text/javascript" src="./assets/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/common.js"></script>
+</head>
+
+<body>
+    <table id="flo_wrapper" align="center" width="1%">
+        <tbody>
+            <tr>
+                <td>
+                    <table id="flo1t">
+                        <tbody>
+                            <tr id="navrow">
+                                <td colspan="3">
+                                    <div id="navigation">
+                                        <div id="navLang">
+                                            <span class="pad_5">Select Language</span>
+                                            <select id="langSelecter">
+                                                <option value="en-US" title="" selected="">English</option>
+                                                <option value="tl-PH" title="Tagalog" disabled>Tagalog</option>
+                                            </select>
+                                        </div>
+                                        <div id="navBar">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr valign="center">
+                                                        <td>
+                                                            <div id="logo">
+                                                                <a target="_top" href="#">
+                                                                    <img id="f_logo" alt="Friendster" src="./assets/friendster_nav_logo.png" border="0" class="logo" width="130" height="18">
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="subnav_search">
+                                                                <div id="subnav">
+                                                                    <a href="messages.php" target="_top">Messages</a>
+                                                                    <span class="globnav_pipe"> | </span>
+                                                                    <a href="editaccount.php" target="_top">Settings</a>
+                                                                    <span class="globnav_pipe"> | </span>
+                                                                    <a href="custhelp.php" target="_top">Help</a>
+                                                                    <span class="globnav_pipe"> | </span>
+                                                                    <a href="" target="_top">Log In</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div id="mainnav">
+                                                <div class="primary_links">
+                                                    <ul id="treemenu1">
+                                                        <li>
+                                                            <span class="noSubMenu">
+                                <a href=""
+                                  target="_top">Home</a>
+                              </span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user.php" target="_top">Profile</a>
+                                                        </li>
+                                                        <li>
+                                                            <span class="noSubMenu">
+                                <a href="widget_myapps.php"
+                                  target="_top">Apps</a>
+                              </span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="friends.php" target="_top">Connections</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="explore.php" target="_top" class="mainfoldericon">Explore</a>
+                                                            <ul style="visibility: hidden;">
+                                                                <li class="sublink_top">
+                                                                    <a href="userlist.php?list=newusers" target="_top">People</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="photolist.php?list=mostrecent" target="_top">Photos</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="blogs.php" target="_top">Blogs</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="video.php" target="_top">Video</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="userlist.php?list=feat_profile" target="_top">Featured Fan Profiles</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="forums" target="_top">Forums</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="widgetdirectory.php" target="_top">Applications</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span class="noSubMenu">
+                                <a href="search/user"
+                                  target="_top">Search</a>
+                              </span>
+                                                        </li>
+                                                        <script type="text/javascript">
+                                                            buildsubmenus_horizontal('./assets/');
+                                                        </script>
+                                                    </ul>
+                                                </div>
+                                                <div class="secondary_links">
+                                                    <a href="http://olx.friendster.com/gateway_cobranded.php?country=-" target="_top">Classifieds</a>
+                                                    <a target="_top" href="invite.php" class="lastLink" name="&amp;lid=navLink_FindFriends">Find Friends</a>
+                                                </div>
+                                            </div>
+                                            <div id="navdivider"></div>
+                                            <div id="marketing_bg">
+                                                <div id="marketing"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="shimrow" class="shim">
+                                <td>
+                                    <img src="./assets/spacer.gif" width="490" height="1">
+                                </td>
+                                <td width="10">
+                                    <img src="./assets/spacer.gif" width="10" height="1">
+                                </td>
+                                <td width="1%">
+                                    <img src="./assets/spacer.gif" width="300" height="1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                </td>
+                            </tr>
+                            <tr class="usercontent">
+                                <td class="ctd" colspan="3" valign="top">
+                                    <ul></ul>
+                                </td>
+                            </tr>
+                            <tr class="usercontent">
+                                <td class="ltd" valign="top">
+                                    <ul>
+                                        <li>
+                                            <div class="clearfix commonbox  controlpanel" id="0">
+                                                <h1 id="controlpanel_header">Pj Salita
+                                                    <a name="0"></a>
+                                                    <a name="controlpanel"></a>
+                                                </h1>
+                                                <div id="content_0">
+                                                    <div class="fitem1wrapper">
+                                                        <table class="fitem1table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="itd">
+                                                                        <div class="imgblock200">
+                                                                            <a href="#" title="Pj Salita: ninja.jpg">
+                                                                                <img src="./assets/ninja.jpg">
+                                                                            </a>
+                                                                        </div>ninja.jpg
+                                                                        <ul id="controlPanelButtons" class="clearfix">
+                                                                            <li>
+                                                                                <a href="http://m.me/pj.wordz">Send Message</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="http://m.me/pj.wordz">Send Nude</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://ask.fm/paaatz_">Ask a Question</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.facebook.com/pj.wordz">Add in Facebook</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.twitter.com/paaatz_">Follow in Twitter</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td class="dtd fullwidth">
+                                                                        <div class="so">
+                                                                            <div class="soc">
+                                                                                <form name="delShoutoutForm">
+                                                                                    <input type="hidden" name="shoutout_value" value="">
+                                                                                </form>
+                                                                                <div id="cpShoutoutBox">
+                                                                                    <div class="somsg">
+                                                                                        <span id="shoutouttxt" style="padding: 0px; margin: 0px;">"e0w p0ehz! izz
+                                              go0d t0 b3 bAck maH fweNdz!!! jeJejeHH!! xD"</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="sol"></div>
+                                                                            </div>
+                                                                            <div class="sob"></div>
+                                                                        </div>
+                                                                        <ul class="data">
+                                                                            <li>
+                                                                                <span class="q">Male, 22, In a Relationship</span>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span class="q">Interested In: </span>Intellectual Species
+                                                                            </li>
+                                                                            <li>
+                                                                                <span class="q">Member Since: </span>May 2007
+                                                                            </li>
+                                                                            <li>
+                                                                                <span class="q">College: </span>
+                                                                                <a href="https://www.tsu.edu.ph">Tarlac State University</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span class="q">Location: </span>
+                                                                                <a href="https://www.google.com/maps/place/Philippines/">Philippines</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span class="q">Hometown: </span>
+                                                                                <a href="https://www.google.com/maps/place/Philippines/">Tarlac</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span class="q">Last Login:</span> Never logged out
+                                                                            </li>
+                                                                            <li>
+                                                                                <span class="q">Pj's URL: </span>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="font-weight: normal;" href="https://pjsalita.github.io/Friendster">https://pjsalita.github.io</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <p>"just made this out of boredom, but hey, this would make a good personal website just in case."
+                                                                        </p>
+                                                                        <p style="text-align: right;">
+                                                                            <a class="more" href="#more">More about Pj</a>
+                                                                        </p>
+                                                                        <div class="user_tracker">
+                                                                            <div style="padding: 5px;">
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <strong>Recent Updates:</strong>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="http://profiles.friendster.com/100578575">added new friend </a> -
+                                                                                        <span class="age" style="font-size: 11px">5 days ago</span>
+                                                                                        <br>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="http://widgets.friendster.com/">added new app </a> -
+                                                                                        <span class="age" style="font-size: 11px">5 days ago</span>
+                                                                                        <br>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="http://profiles.friendster.com/Pj">posted shoutout</a> -
+                                                                                        <span class="age" style="font-size: 11px">5 days ago</span>
+                                                                                        <br>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="viewphotos.php?uid=100512060&amp;a=901855237">created new album </a> -
+                                                                                        <span class="age" style="font-size: 11px">5 days ago</span>
+                                                                                        <br>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="photos/100512060">added new photo</a> -
+                                                                                        <span class="age" style="font-size: 11px">5 days ago</span>
+                                                                                        <br>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li></li>
+                                        <li></li>
+                                        <div class="clearfix commonbox  photos" id="1">
+                                            <h2 id="moduleHeader" class="clearfix">
+                                                <div class="moduleTitle">Pj's Photo Gallery
+                                                    <a name="1"></a>
+                                                    <a name="photos"></a>
+                                                </div>
+                                                <div class="moduleMenu"></div>
+                                            </h2>
+                                            <div id="content_1">
+                                                <div class="boxcontent">
+                                                    <div class="flogridp">
+                                                        <div class="flogriditem albumitem">
+                                                            <div class="ir">
+                                                                <a href="#" alt="em0 4eVer" title="em0 4eVer"><img src="./assets/emo1.jpg" alt="em0 4eVer" title="em0 4eVer"></a>
+                                                            </div>
+                                                            <ul id="album-details">
+                                                                <li><a alt="em0 4eVer" title="em0 4eVer" href="#">em0 4eVer</a></li>
+                                                                <li>1 photo</li>
+                                                                <li>Public</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="flogriditem albumitem">
+                                                            <div class="ir">
+                                                                <a href="#" alt="em0 4eVer" title="em0 4eVer"><img src="./assets/emo2.jpg" alt="em0 4eVer" title="em0 4eVer"></a>
+                                                            </div>
+                                                            <ul id="album-details">
+                                                                <li><a alt="em0 4eVer" title="em0 4eVer" href="#">em0 4eVer</a></li>
+                                                                <li>1 photo</li>
+                                                                <li>Public</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="flogriditem albumitem">
+                                                            <div class="ir">
+                                                                <a href="#" alt="em0 4eVer" title="em0 4eVer"><img src="./assets/emo3.jpg" alt="em0 4eVer" title="em0 4eVer"></a>
+                                                            </div>
+                                                            <ul id="album-details">
+                                                                <li><a alt="em0 4eVer" title="em0 4eVer" href="#">em0 4eVer</a></li>
+                                                                <li>1 photo</li>
+                                                                <li>Public</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="flogriditem albumitem">
+                                                            <div class="ir">
+                                                                <a href="#" alt="em0 4eVer" title="em0 4eVer"><img src="./assets/emo4.jpg" alt="em0 4eVer" title="em0 4eVer"></a>
+                                                            </div>
+                                                            <ul id="album-details">
+                                                                <li><a alt="em0 4eVer" title="em0 4eVer" href="#">em0 4eVer</a></li>
+                                                                <li>1 photo</li>
+                                                                <li>Public</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="viewall"><a href="#">View
+                            All Albums (15)</a></div>
+                                            </div>
+                                        </div>
+                                        <li>
+                                            <div class="clearfix commonbox  moreabout" id="more">
+                                                <h2 id="moduleHeader" class="clearfix">
+                                                    <div class="moduleTitle">More About Pj
+                                                        <a name="6"></a>
+                                                        <a name="moreabout"></a>
+                                                    </div>
+                                                    <div class="moduleMenu"></div>
+                                                </h2>
+                                                <div id="content_6">
+                                                    <div class="boxcontent">
+                                                        <ul class="questions">
+                                                            <li>
+                                                                <span class="q">Schools (Other):</span>
+                                                                <p>
+                                                                    <a href="#">Tarlac State University</a>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <a name="interests"></a>
+                                                                <span class="q">Hobbies and Interests:</span>
+                                                                <br>
+                                                                <p>
+                                                                    <a href="#">Doing something like this</a>,
+                                                                    <a href="#">listening to music</a>,
+                                                                    <a href="#">and sleeping</a>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <a name="favoritebooks"></a>
+                                                                <span class="q">Favorite Books:</span>
+                                                                <br>
+                                                                <p>
+                                                                    <a href="#">I don't really like reading tbh</a>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <a name="favoriteanimes"></a>
+                                                                <span class="q">Favorite Anime:</span>
+                                                                <br>
+                                                                <p>
+                                                                    <a href="#">Code Geass</a>, <a href="#">One Piece</a>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <a name="favoritemovies"></a>
+                                                                <span class="q">Favorite Movies:</span>
+                                                                <br>
+                                                                <p>
+                                                                    <a href="#">Inception</a>,
+                                                                    <a href="#">Interstellar</a>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <a name="favoritemusic"></a>
+                                                                <span class="q">Favorite Music:</span>
+                                                                <br>
+                                                                <p>
+                                                                    <a href="#media">Your Guardian Angel - The Red Jumpsuit Apparatus</a>,
+                                                                    <a href="#media">We Can Try - Between the Trees</a>,
+                                                                    <a href="#media">Annie - Safetysuit</a>,
+                                                                    <a href="#media">Enough to Let Me Go - Switchfoot</a>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <a name="favoritegenre"></a>
+                                                                <span class="q">Favorite Genre:</span>
+                                                                <br>
+                                                                <p>
+                                                                    <a href="#media">Punk Rock</a>,
+                                                                    <a href="#media">Pop Rock</a>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <a name="favoritetv"></a>
+                                                                <span class="q">Favorite TV Shows:</span>
+                                                                <br>
+                                                                <p>
+                                                                    <a href="#">Game of Thrones</a>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="q">About Me: </span>
+                                                                <br>
+                                                                <p>I love you my baby Janella!!! ♥ </p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="q">Who I Want to Meet: </span>
+                                                                <br>
+                                                                <p>Whoever who did not vote for Bong Revilla Jr.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix commonbox  publiccomments" id="18">
+                                                <h2 id="moduleHeader" class="clearfix">
+                                                    <div class="moduleTitle">Testimonials and Comments for Pj
+                                                        <a name="18"></a>
+                                                        <a name="publiccomments"></a>
+                                                    </div>
+                                                    <div class="moduleMenu"></div>
+                                                </h2>
+                                                <div id="content_18">
+                                                    <div class="viewall">
+                                                        <a href="#">View All (1440)</a> | <a href="#">Post a Comment</a>
+                                                    </div>
+                                                    <div class="fitem1wrapper">
+                                                        <table class="fitem1table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="itd">
+                                                                        <div class="imgblock75">
+                                                                            <a href="https://www.facebook.com/JANELLAstersOfficial/"><img src="./assets/jea.jpg"></a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="dtd">
+                                                                        <ul class="data">
+                                                                            <li class="title"><a href="https://www.facebook.com/JANELLAstersOfficial/">Janella Maxine Salvador</a></li>
+                                                                            <li>Posted 05/19/2019 8:10 pm
+                                                                            </li>
+                                                                            <li><bdo dir="ltr">Hey babe! I love you so much!!! I miss you everyday! :*</bdo></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="fitem1wrapper evenrow">
+                                                        <table class="fitem1table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="itd">
+                                                                        <div class="imgblock75">
+                                                                            <a href="https://www.facebook.com/JANELLAstersOfficial/"><img src="./assets/jea.jpg"></a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="dtd">
+                                                                        <ul class="data">
+                                                                            <li class="title"><a href="https://www.facebook.com/JANELLAstersOfficial/">Janella Maxine Salvador</a>
+                                                                            </li>
+                                                                            <li>Posted 05/14/2019 12:00 am
+                                                                            </li>
+                                                                            <li><bdo dir="ltr">HAPPY MONTHSARY MY LOVE! I LOVE YOU SO MUUUUCH!!!</bdo></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="viewall">
+                                                        <a href="#">View All (1440)</a> | <a href="#">Post a Comment</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix commonbox  scrapbook" id="10">
+                                                <h2 id="moduleHeader" class="clearfix">
+                                                    <div class="moduleTitle">Pj's Media Box</div>
+                                                    <div class="moduleMenu"></div>
+                                                </h2>
+                                                <div id="content_10">
+                                                    <div class="boxcontent">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/m3G5Jpb73_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td valign="top">
+                                    <img src="./assets/spacer.gif" width="10" height="1">
+                                </td>
+                                <td class="rtd" valign="top">
+                                    <ul>
+                                        <li>
+                                            <div class="clearfix standalonebox  meettrail" id="15">
+                                                <div id="content_15">
+                                                    <div id="meettrail">
+                                                        <div class="commonbox">
+                                                            <h2 class="h2m">
+                                                                <div class="commonbox">
+                                                                    <h2>
+                                                                        How you're connected:
+                                                                    </h2>
+                                                                    <div class="viewall">
+                                                                        <a href="https://www.linkedin.com/in/pjsalita/">View All</a>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="bottom">
+                                                                        <table align="center">
+                                                                            <tbody>
+                                                                                <tr valign="middle" align="center">
+                                                                                    <td>You</td>
+                                                                                    <td>
+                                                                                        <img src="./assets/mt_arrow.gif">
+                                                                                    </td>
+                                                                                    <td width="150" height="40" class="boldtext">
+                                                                                        <span style="font: 11px arial">Pj is in your extended network</span>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <img src="./assets/mt_arrow.gif">
+                                                                                    </td>
+                                                                                    <td>Pj</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix commonbox  friends" id="2">
+                                                <h2 id="moduleHeader" class="clearfix">
+                                                    <div class="moduleTitle">Pj's Friends
+                                                        <a name="2"></a>
+                                                        <a name="friends"></a>
+                                                    </div>
+                                                    <div class="moduleMenu"></div>
+                                                </h2>
+                                                <div id="content_2">
+                                                    <div class="boxcontent">
+                                                        <div class="flogrid75">
+                                                            <div class="flogriditem">
+                                                                <div class="ir">
+                                                                    <a href="https://www.facebook.com/JANELLAstersOfficial/">
+                                                                        <img src="./assets/jea.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="dr">
+                                                                    <a href="https://www.facebook.com/JANELLAstersOfficial/">Janella</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="editlink"></div>
+                                                    <div class="viewall">
+                                                        <a href="friends/100512060">View
+                              All (1)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix commonbox  fanof" id="7">
+                                                <h2 id="moduleHeader" class="clearfix">
+                                                    <div class="moduleTitle">Pj's a Fan Of...
+                                                        <a name="7"></a>
+                                                        <a name="fanof"></a>
+                                                    </div>
+                                                    <div class="moduleMenu"></div>
+                                                </h2>
+                                                <div id="content_7">
+                                                    <div class="boxcontent">
+                                                        <div class="flogrid75">
+                                                            <div class="flogriditem">
+                                                                <div class="ir">
+                                                                    <a href="https://www.facebook.com/JANELLAstersOfficial/">
+                                                                        <img src="./assets/jea.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="dr">
+                                                                    <a href="https://www.facebook.com/JANELLAstersOfficial/">Janella Maxi...</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flogriditem">
+                                                                <div class="ir">
+                                                                    <a href="https://www.facebook.com/OfficialGabbiGarcia/">
+                                                                        <img src="./assets/gabbi.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="dr">
+                                                                    <a href="https://www.facebook.com/OfficialGabbiGarcia/">Gabbi Garcia</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flogriditem">
+                                                                <div class="ir">
+                                                                    <a href="https://www.facebook.com/redjumpsuitapparatus/">
+                                                                        <img src="./assets/rja.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="dr">
+                                                                    <a href="https://www.facebook.com/redjumpsuitapparatus/">The Red Ju...</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flogriditem">
+                                                                <div class="ir">
+                                                                    <a href="https://www.facebook.com/alltimelow/">
+                                                                        <img src="./assets/atl.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="dr">
+                                                                    <a href="https://www.facebook.com/alltimelow/">All Time Low</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flogriditem">
+                                                                <div class="ir">
+                                                                    <a href="https://www.facebook.com/safetysuit/">
+                                                                        <img src="./assets/ss.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="dr">
+                                                                    <a href="https://www.facebook.com/safetysuit/">Safetysuit</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flogriditem">
+                                                                <div class="ir">
+                                                                    <a href="https://www.facebook.com/switchfoot/">
+                                                                        <img src="./assets/sf.jpeg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="dr">
+                                                                    <a href="https://www.facebook.com/switchfoot/">Switchfoot</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="editlink"></div>
+                                                    <div class="viewall"><a href="#">View All (7)</a></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix commonbox  groups" id="8">
+                                                <h2 id="moduleHeader" class="clearfix">
+                                                    <div class="moduleTitle">Pj's Groups
+                                                        <a name="8"></a>
+                                                        <a name="groups"></a>
+                                                    </div>
+                                                    <div class="moduleMenu"></div>
+                                                </h2>
+                                                <div id="content_8">
+                                                    <div class="fitem1wrapper">
+                                                        <table class="fitem1table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="itd">
+                                                                        <div class="imgblock75">
+                                                                            <a href="https://www.facebook.com/groups/ProgramersDevelopers/"><img src="./assets/pd.png"></a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="dtd">
+                                                                        <ul class="data">
+                                                                            <li class="title"><a href="https://www.facebook.com/groups/ProgramersDevelopers/">Programmers,Developers</a></li>
+                                                                            <li>209,281 Members | Public group</li>
+                                                                            <li>Last post: <span id="timetag1">Sunday, May 19, 2019</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="fitem1wrapper evenrow">
+                                                        <table class="fitem1table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="itd">
+                                                                        <div class="imgblock75">
+                                                                            <a href="https://www.facebook.com/groups/243628479525931/"><img src="./assets/gc.jpg"></a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="dtd">
+                                                                        <ul class="data">
+                                                                            <li class="title"><a href="https://www.facebook.com/groups/243628479525931/">GrandChase Philippines</a></li>
+                                                                            <li>6,729 Members | Public group</li>
+                                                                            <li>Last post: <span id="timetag2">Monday, May 20, 2019</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="fitem1wrapper">
+                                                        <table class="fitem1table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="itd">
+                                                                        <div class="imgblock75">
+                                                                            <a href="https://www.facebook.com/groups/odeskphilippines/"><img src="./assets/uw.png"></a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="dtd">
+                                                                        <ul class="data">
+                                                                            <li class="title"><a href="https://www.facebook.com/groups/odeskphilippines/">Upwork Philippines</a></li>
+                                                                            <li>98,434 Members | Public group</li>
+                                                                            <li>Last post: <span id="timetag2">Monday, May 20, 2019</span>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="editlink"></div>
+                                                    <div class="viewall"><a href="#">View
+                              All (3)</a></div>
+                                                </div>
+                                            </div>
+                                            </li>
+                                            <li></li>
+                                            <li></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="footer_container">
+        <div id="footer" class="applicationWrapper" style="display:block;">
+            <a href="#" target="_top">About Us</a> |
+
+            <a href="#" target="_top">Blog</a> |
+
+            <a href="#" target="_top">Contact Us</a> |
+
+            <a href="#" target="_top">Developers</a> |
+
+            <a href="#" target="_top">Share Your Profile</a> |
+
+            <a href="#" target="_top">Help</a> |
+
+            <a name="&amp;lid=advertise_footerLink" href="#" target="_top">Advertise</a>
+            <span style="color:#f26649;position:relative;top:-3px"> New</span> |
+
+            <a href="#" target="_top">Terms of Service</a> |
+
+            <a href="#" target="_top">Privacy Policy</a>
+            <div style="margin-top: 5px !important;">No Copyright 2002-2019 NotFriendster, Inc. No rights reserved. Baka makasuhan.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
